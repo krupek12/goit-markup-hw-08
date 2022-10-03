@@ -1161,6 +1161,15 @@ label:focus-within > svg {
   top: 10px;
   right: 15px;
 }
+.menu-toggle__icon {
+  width: 24px;
+  height: 16px;
+  fill: var(--text-color-4);
+  position: absolute;
+  top: 22px;
+  right: 23px;
+  cursor: pointer;
+}
 .menu-toggle:hover, .menu-toggle:focus {
   fill: var(--logo-color);
 }

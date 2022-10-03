@@ -13,6 +13,15 @@
   position: absolute;
   top: 10px;
   right: 15px;
+  &__icon {
+    width: 24px;
+    height: 16px;
+    fill: var(--text-color-4);
+    position: absolute;
+    top: 22px;
+    right: 23px;
+    cursor: pointer;
+  }
   &:hover,
   &:focus {
     fill: var(--logo-color);
