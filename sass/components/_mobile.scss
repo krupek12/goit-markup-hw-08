@@ -18,8 +18,8 @@
     height: 16px;
     fill: var(--text-color-4);
     position: absolute;
-    top: 22px;
-    right: 23px;
+    top: 10px;
+    right: 15px;
     cursor: pointer;
   }
   &:hover,
@@ -52,7 +52,6 @@
   flex-direction: column;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 306px;
   &__options {
     color: var(--text-color-4);
     font-size: 40px;
