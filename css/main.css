@@ -116,32 +116,7 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.page-menu__toggle {
-  outline: none;
-  min-height: 40px;
-  min-width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  cursor: pointer;
-}
-.page-menu__toggle:hover, .page-menu__toggle:focus {
-  fill: var(--logo-color);
-}
-.page-menu__toggle__icon {
+.page-menu__icon {
   width: 24px;
   height: 16px;
   fill: var(--text-color-4);
@@ -1199,8 +1174,8 @@ label:focus-within > svg {
   position: fixed;
   top: 0;
   left: 0;
-  width: 320px;
-  height: 100%;
+  min-width: 480px;
+  min-height: 796px;
   padding: 0;
   background-color: var(--text-color-2);
   z-index: 999;

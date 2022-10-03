@@ -7,34 +7,14 @@
   min-height: 60px;
   margin: 0 auto;
   justify-content: space-between;
-  &__toggle {
-    outline: none;
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    border: none;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
+  &__icon {
+    width: 24px;
+    height: 16px;
+    fill: var(--text-color-4);
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 22px;
+    right: 23px;
     cursor: pointer;
-    &:hover,
-    &:focus {
-      fill: var(--logo-color);
-    }
-    &__icon {
-      width: 24px;
-      height: 16px;
-      fill: var(--text-color-4);
-      position: absolute;
-      top: 22px;
-      right: 23px;
-      cursor: pointer;
-    }
   }
 }
 

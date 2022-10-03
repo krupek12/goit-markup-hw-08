@@ -27,8 +27,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 320px;
-  height: 100%;
+  min-width: 480px;
+  min-height: 796px;
   padding: 0;
   background-color: var(--text-color-2);
   z-index: 999;
@@ -75,6 +75,7 @@
     }
   }
 }
+
 .mobile-menu__media:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(153, 151, 151, 0.75);
