@@ -38,13 +38,6 @@ ul {
   padding: 0;
 }
 
-.container {
-  min-width: 320px;
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: auto;
-}
-
 /*.container {
   width: 100%;
   max-width: 1200px;
@@ -1173,8 +1166,8 @@ label:focus-within > svg {
   height: 16px;
   fill: var(--text-color-4);
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 22px;
+  right: 23px;
   cursor: pointer;
 }
 .menu-toggle:hover, .menu-toggle:focus {
