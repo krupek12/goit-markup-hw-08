@@ -1,0 +1,123 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 252px;
+  background-color: var(--box-1-color);
+  > .container {
+    display: flex;
+    column-gap: 70px;
+    align-items: baseline;
+    padding: 0 30px;
+  }
+}
+.contact-footer {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--text-color-4);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  .contact-footer__link {
+    color: var(--text-color-2);
+    opacity: 0.6;
+    margin-bottom: 9px;
+    &:hover {
+      color: var(--logo-color);
+    }
+  }
+}
+
+address {
+  color: var(--text-color-2);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.footer-headline {
+  color: var(--text-color-2);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-left: 8px;
+}
+.footer-social-media {
+  list-style: none;
+  display: flex;
+  position: relative;
+  gap: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  &__icon {
+    border-radius: 50%;
+    fill: var(--text-color-2);
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    &:hover,
+    &:focus {
+      fill: var(--text-color-2);
+      background-color: var(--logo-color);
+    }
+  }
+}
+
+/*----formularz stopka---*/
+.footer-form {
+  position: relative;
+  &__frame {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px 16px;
+    background-color: var(--box-1-color);
+    margin-left: 8px;
+  }
+  &__button {
+    display: block;
+    position: absolute;
+    flex-direction: column;
+    width: 200px;
+    height: 50px;
+    background-color: var(--logo-color);
+    border-radius: 4px;
+    border: none;
+    left: 378px;
+    bottom: 0px;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    /*teks guzika*/
+    color: var(--text-color-2);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 42px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 148px;
+    bottom: 13px;
+    display: flex;
+  }
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}

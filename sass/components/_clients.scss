@@ -1,0 +1,34 @@
+.clients {
+  max-width: 1600px;
+  height: 372px;
+  &__headline {
+    color: var(--text-color-4);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+  }
+  &__icon {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--social-media);
+    border-radius: 4px;
+    fill: var(--social-media);
+    cursor: pointer;
+    padding: 10px;
+    &:hover,
+    &:focus {
+      fill: var(--logo-color);
+      border: 1px solid var(--logo-color);
+    }
+  }
+}

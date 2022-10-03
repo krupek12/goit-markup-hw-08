@@ -1,0 +1,32 @@
+.article {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-direction: row;
+  &__list {
+    display: flex;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  &__paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-color-3);
+    line-height: 1.75;
+    flex-wrap: wrap;
+    letter-spacing: 0.03em;
+    display: flex;
+    justify-content: center;
+    width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  &__icon {
+    gap: 30px;
+    margin: 0 auto;
+  }
+}
+.article__item:not(:last-child) {
+  margin-right: 30px;
+}

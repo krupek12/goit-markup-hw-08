@@ -1,0 +1,73 @@
+.our-team {
+  background-color: var(--box-2-color);
+  height: 708px;
+  width: 100%;
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.card {
+  padding: 0;
+  margin: 0;
+  max-width: 270px;
+  height: 428px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.12);
+  &__name {
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 1.18;
+    color: var(--text-color-4);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  &__paragraph {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 1.18;
+    color: var(--text-color-3);
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 30px;
+}
+.social-media {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  li {
+    fill: var(--social-media);
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color-2);
+  }
+  &__icon {
+    display: flex;
+    fill: var(--social-media);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    &:hover,
+    &:focus {
+      fill: var(--text-color-2);
+      background-color: var(--logo-color);
+    }
+  }
+}

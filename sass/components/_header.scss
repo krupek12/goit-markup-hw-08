@@ -1,0 +1,138 @@
+.page-menu {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  min-width: 304px;
+  max-width: 1200px;
+  flex-direction: row;
+  min-height: 60px;
+  margin: 0 auto;
+  justify-content: space-between;
+  &__toggle {
+    outline: none;
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      fill: var(--logo-color);
+    }
+    &__icon {
+      width: 24px;
+      height: 16px;
+      fill: var(--text-color-4);
+      position: absolute;
+      top: 22px;
+      right: 23px;
+      cursor: pointer;
+    }
+  }
+}
+
+.menu {
+  display: none;
+}
+.contact {
+  display: none;
+}
+/*
+.page-menu {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+  height: 80px;
+  justify-content: start;
+  gap: 93px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  gap: 46px;
+  padding: 0;
+  margin: 0;
+  width: 261px;
+  &__link {
+    color: var(--text-color-4);
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    &--line {
+      position: relative;
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 44px;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--logo-color);
+        cursor: unset;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.contact {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--text-color-3);
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  gap: 50px;
+  margin-left: auto;
+  .contact__link {
+    color: var(--text-color-3);
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    &:hover {
+      fill: var(--logo-color);
+    }
+  }
+  &__item:hover,
+  &__item:focus {
+    fill: var(--logo-color);
+    background-color: var(--text-color-2);
+  }
+}
+
+.contact__icon {
+  fill: var(--social-media);
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+  &:hover {
+    fill: var(--logo-color);
+  }
+  &--smartphone {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.contact__link:hover,
+.menu__link:hover {
+  color: var(--logo-color);
+}
+nav {
+  margin: 0;
+}
+*/
