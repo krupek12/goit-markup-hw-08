@@ -67,8 +67,18 @@
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        <svg class="page-menu__icon" width="40" height="40">
-          <use href="./images/icons.svg#icon-menu"></use>
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
         </svg>
       </button>
     </header>
@@ -611,38 +621,50 @@
         </form>
       </div>
     </div> -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="mobile menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg class="menu-toggle__icon" width="40" height="40">
-          <use href="./images/icons.svg#icon-close"></use>
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
         </svg>
       </button>
 
       <ul class="mobile-menu">
-        <li><a class="mobile-menu__options" href="index.html">Agencja</a></li>
+        <li><a class="mobile-menu-link" href="index.html">Agencja</a></li>
         <li>
-          <a class="mobile-menu__options" href="portfolio.html">Portfolio</a>
+          <a class="mobile-menu-link" href="portfolio.html">Portfolio</a>
         </li>
-        <li><a class="mobile-menu__options" href="index.html">Kontakt</a></li>
+        <li><a class="mobile-menu-link" href="index.html">Kontakt</a></li>
       </ul>
-      <ul class="mobile-menu__contact">
-        <li>
-          <a class="mobile-menu__link--accent" href="tel:+48 111 111 111"
-            >+48 111 111 111</a
-          >
-        </li>
-        <li>
-          <a class="mobile-menu__link--item" href="mailto:info@example.com"
-            >info@example.com</a
-          >
-        </li>
-      </ul>
-      <ul class="mobile-menu__media">
-        <li><a class="mobile-menu__link" href="#">Instagram</a></li>
-        <li><a class="mobile-menu__link" href="#">Twitter</a></li>
-        <li><a class="mobile-menu__link" href="#">Facebook</a></li>
-        <li><a class="mobile-menu__link" href="#">LinkedIn</a></li>
-      </ul>
+      <!--<div class="mobile-menu">
+        <ul class="mobile-menu__contact">
+          <li>
+            <a class="mobile-menu__phone" href="tel:+48 111 111 111"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu__email" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile__media">
+          <li><a class="mobile__media--link" href="#">Instagram</a></li>
+          <li><a class="mobile__media--link" href="#">Twitter</a></li>
+          <li><a class="mobile__media--link" href="#">Facebook</a></li>
+          <li><a class="mobile__media--link" href="#">LinkedIn</a></li>
+        </ul>
+      </div>-->
     </div>
 
     <script src="./modal.js"></script>
