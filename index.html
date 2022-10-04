@@ -630,7 +630,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
-          fill="currentColor"
+          fill="black"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -644,33 +644,41 @@
         </svg>
       </button>
 
-      <ul class="mobile-menu">
-        <li><a class="mobile-menu-link" href="index.html">Agencja</a></li>
-        <li>
-          <a class="mobile-menu-link" href="portfolio.html">Portfolio</a>
+      <ul class="mobile-menu options">
+        <li class="mobile-menu__link">
+          <a class="mobile-menu__link" href="index.html">Agencja</a>
         </li>
-        <li><a class="mobile-menu-link" href="index.html">Kontakt</a></li>
+        <li>
+          <a class="mobile-menu__link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="mobile-menu__link" href="index.html">Kontakt</a></li>
       </ul>
-      <!--<div class="mobile-menu">
-        <ul class="mobile-menu__contact">
-          <li>
+      <div class="mobile-box">
+        <ul class="mobile-menu call">
+          <li class="mobile-menu__phone">
             <a class="mobile-menu__phone" href="tel:+48 111 111 111"
               >+48 111 111 111</a
             >
           </li>
-          <li>
+          <li class="mobile-menu__email">
             <a class="mobile-menu__email" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
         </ul>
-        <ul class="mobile__media">
-          <li><a class="mobile__media--link" href="#">Instagram</a></li>
-          <li><a class="mobile__media--link" href="#">Twitter</a></li>
-          <li><a class="mobile__media--link" href="#">Facebook</a></li>
-          <li><a class="mobile__media--link" href="#">LinkedIn</a></li>
+        <ul class="mobile-menu media">
+          <li class="media__border">
+            <a class="media__link" href="#">Instagram</a>
+          </li>
+          <li class="media__border">
+            <a class="media__link" href="#">Twitter</a>
+          </li>
+          <li class="media__border">
+            <a class="media__link" href="#">Facebook</a>
+          </li>
+          <li><a class="media__link" href="#">LinkedIn</a></li>
         </ul>
-      </div>-->
+      </div>
     </div>
     <script
       defer

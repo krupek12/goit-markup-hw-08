@@ -9,6 +9,7 @@
   padding: 0;
   cursor: pointer;
   background-color: transparent;
+  border-radius: 50%;
   outline: none;
   cursor: pointer;
 }
@@ -31,8 +32,10 @@ svg:focus {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  max-width: 100vw;
+  min-width: 320px;
+  min-height: 100%;
+  width: 100vw;
+  height: 796px;
   padding: 32px;
   background-color: var(--text-color-2);
   z-index: 999;
@@ -56,17 +59,70 @@ svg:focus {
   padding: 0;
   margin: 0;
   list-style: none;
-  font-size: 34px;
+  font-size: 40px;
   font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  gap: 32px;
+  &__link {
+    color: var(--text-color-4);
+    &:hover,
+    &:focus {
+      color: var(--logo-color);
+    }
+  }
+  &__phone {
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--logo-color);
+  }
+  &__email {
+    font-size: 24px;
+    line-height: 1.16;
+    color: var(--text-color-3);
+  }
 }
-.mobile-menu .mobile-menu-link .mobile-menu__email .mobile-menu__phone {
+.options {
+  margin-bottom: 308px;
+  margin-top: 16px;
+}
+.mobile-menu .mobile-menu__link .mobile-menu__email .mobile-menu__phone {
   display: block;
   padding: 10px;
   color: var(--text-color-4);
   text-decoration: none;
 }
-@media (max-width: 767px) {
-  .mobile-menu {
-    display: none;
+.mobile-box {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  padding: 0;
+  margin: 0;
+}
+.call {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.media {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  gap: 0;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 00.02em;
+  justify-content: flex-start;
+  &__link {
+    color: var(--logo-color);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__border {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
