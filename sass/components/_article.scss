@@ -1,4 +1,6 @@
 .article {
+  min-width: 304px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -14,7 +16,7 @@
   }
   &__paragraph {
     @include font-style(14px, 400, 0.03em, 1.75);
-    color: var(--text-color-3);
+    color: $paragraphs;
     display: flex;
     justify-content: space-evenly;
     width: 450px;

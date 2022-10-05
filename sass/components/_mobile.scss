@@ -91,6 +91,8 @@ svg:focus {
   text-decoration: none;
 }
 .mobile-box {
+  min-width: 304px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 65px;

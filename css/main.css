@@ -250,7 +250,7 @@ nav {
   font-weight: 900;
   letter-spacing: 0.06em;
   line-height: 1.61;
-  color: var(--text-color-2);
+  color: #ffffff;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -269,7 +269,7 @@ nav {
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.875;
-  background-color: var(--logo-color);
+  background-color: #2196f3;
   color: var(--text-color-2);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
@@ -305,6 +305,8 @@ nav {
 }
 */
 .article {
+  min-width: 304px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,7 +342,7 @@ nav {
   font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 1.75;
-  color: var(--text-color-3);
+  color: #757575;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1287,6 +1289,8 @@ svg:focus {
 }
 
 .mobile-box {
+  min-width: 304px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
