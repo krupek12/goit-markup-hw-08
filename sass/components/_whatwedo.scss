@@ -1,6 +1,17 @@
 .whatwedo {
   display: none;
 }
+.image {
+  &__list {
+    display: none;
+  }
+  &__item {
+    display: none;
+  }
+  &__paragraph {
+    display: none;
+  }
+}
 /*.image {
   &__list {
     list-style-type: none;
