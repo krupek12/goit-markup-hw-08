@@ -349,6 +349,11 @@ nav {
           justify-content: center;
   width: 270px;
 }
+.article__icon {
+  width: 450px;
+  gap: 30px;
+  margin: 0 auto;
+}
 
 /*
 .article {
@@ -356,10 +361,7 @@ nav {
   &__paragraph {
 
   }
-  &__icon {
-    gap: 30px;
-    margin: 0 auto;
-  }
+
 }
 .article__item:not(:last-child) {
   margin-right: 30px;
