@@ -16,7 +16,7 @@
 
 svg:hover,
 svg:focus {
-  fill: var(--logo-color);
+  fill: #2196f3;
 }
 @media (min-width: 768px) {
   .menu-toggle {
@@ -37,7 +37,7 @@ svg:focus {
   width: 100vw;
   height: 796px;
   padding: 32px;
-  background-color: $main-bg;
+  background-color: #fff;
   z-index: 999;
 
   transform: translateX(100%);
@@ -52,7 +52,7 @@ svg:focus {
   position: absolute;
   top: 10px;
   right: 15px;
-  color: $main-bg;
+  color: #fff;
 }
 
 .mobile-menu {
@@ -67,19 +67,19 @@ svg:focus {
   margin-left: 8px;
   gap: 32px;
   &__link {
-    color: var(--text-color-4);
+    color: #212121;
     &:hover,
     &:focus {
-      color: var(--logo-color);
+      color: #2196f3;
     }
   }
   &__phone {
     @include font-style(34px, 500, 0.02em, 1.17);
-    color: var(--logo-color);
+    color: #2196f3;
   }
   &__email {
     @include font-style(24px, 500, 0.02em, 1.16);
-    color: var(--text-color-3);
+    color: #757575;
   }
 }
 .options {
@@ -89,7 +89,7 @@ svg:focus {
 .mobile-menu .mobile-menu__link .mobile-menu__email .mobile-menu__phone {
   display: block;
   padding: 10px;
-  color: var(--text-color-4);
+  color: $headlines;
   text-decoration: none;
 }
 .mobile-box {
@@ -115,7 +115,7 @@ svg:focus {
   justify-content: flex-start;
   &__link {
     @include font-style(18px, 500, 0.02em, 1.22);
-    color: var(--logo-color);
+    color: #2196f3;
   }
   &__border {
     padding-right: 10px;

@@ -9,11 +9,14 @@
     flex-wrap: wrap;
     flex-basis: calc((100% - 90px) / 4);
     &__item {
+      flex-wrap: wrap;
+      gap: 30px;
       width: 100%;
     }
     &__list {
+      flex-basis: 100%;
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       list-style-type: none;
       min-width: 304px;
       margin: 0 auto;
@@ -21,7 +24,7 @@
     }
     &__paragraph {
       @include font-style(14px, 400, 0.03em, 1.75);
-      color: $paragraphs;
+      color: #757575;
       display: flex;
       justify-content: space-evenly;
       min-width: 304px;
