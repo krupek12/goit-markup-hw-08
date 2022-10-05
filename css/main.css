@@ -328,6 +328,9 @@ nav {
         flex-basis: calc((100% - 90px) / 4);
   }
   .article__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
@@ -372,7 +375,7 @@ nav {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 30px;
-    margin: 0 auto;
+    margin-top: 30px;
   }
 }
 /*
