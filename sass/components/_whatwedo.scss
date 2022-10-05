@@ -1,13 +1,20 @@
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and(max-width:1200px) {
   .whatwedo {
     display: none;
   }
-}
-@media (min-width: 768px) and (max-width: 1200px) {
-  .whatwedo {
-    display: none;
+  .image {
+    &__list {
+      font-display: none;
+    }
+    &__item {
+      display: none;
+    }
+    &__paragraph {
+      display: none;
+    }
   }
 }
+
 /*.image {
   &__list {
     list-style-type: none;
