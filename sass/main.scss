@@ -1,6 +1,9 @@
 @import "./utils/colors";
 @import "./utils/common";
 @import "./utils/logo";
+@import "./utils/vars";
+@import "./utils/mixins";
+
 @import "./components/header";
 @import "./components/banner";
 @import "./components/article";
@@ -12,4 +15,3 @@
 @import "./components/portfolliobtn";
 @import "./components/mainportfolio";
 @import "./components/mobile";
-

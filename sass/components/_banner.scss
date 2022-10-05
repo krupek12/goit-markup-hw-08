@@ -15,9 +15,7 @@
   min-width: 304px;
   width: 100%;
   &__headline {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
+    @include font-style(26px, 900, 0.06em, 1.61);
     color: var(--text-color-2);
     text-align: center;
     justify-content: center;
@@ -29,8 +27,7 @@
     display: block;
     text-align: center;
     align-items: center;
-    font-size: 16px;
-    font-weight: 700;
+    @include font-style(16px, 700, 0.06em, 1.875);
     background-color: var(--logo-color);
     color: var(--text-color-2);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
