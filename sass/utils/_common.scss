@@ -33,7 +33,16 @@ ul {
 img {
   display: block;
 }
-
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 00.03em;
+  margin: 0;
+  margin-bottom: 30px;
+}
 h5 {
   font-size: 14px;
   font-weight: 700;
@@ -43,7 +52,8 @@ h5 {
   text-align: center;
   justify-content: center;
 }
-h2 {
+
+/*h2 {
   color: #212121;
   font-size: 36px;
   font-weight: 700;
@@ -51,3 +61,4 @@ h2 {
   text-align: center;
   margin-bottom: 50px;
 }
+*/

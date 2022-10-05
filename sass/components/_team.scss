@@ -1,44 +1,42 @@
 .our-team {
-  background-color: var(--box-2-color);
-  height: 708px;
-  width: 100%;
+  background-color: $secondary-bg;
+  display: flex;
+  flex-direction: column;
   &__list {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 30px;
   }
 }
-
 .card {
   padding: 0;
   margin: 0;
-  max-width: 270px;
-  height: 428px;
+  max-width: 450px;
+  height: 622px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  background-color: var(--background-color);
+  background-color: $main-bg;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.12);
   &__name {
-    font-size: 16px;
-    font-weight: 500px;
-    line-height: 1.18;
-    color: var(--text-color-4);
+    @include font-style(16px, 500, 0.03em, 1.19);
+    color: $headlines;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
   }
   &__paragraph {
-    font-size: 16px;
-    font-weight: 400px;
-    line-height: 1.18;
-    color: var(--text-color-3);
+    @include font-style(16px, 400, 0.03em, 1.19);
+    color: $paragraphs;
     justify-content: center;
     margin-bottom: 16px;
   }
+  img {
+    width: 450px;
+    min-height: 460px;
+  }
 }
-
 figcaption {
   text-align: center;
   margin-top: 30px;
@@ -51,6 +49,39 @@ figcaption {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 30px;
+  li {
+    fill: $svg-icon;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-bg;
+  }
+  &__icon {
+    display: flex;
+    fill: $svg-icon;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+}
+
+/*
+.our-team {
+  background-color: var(--box-2-color);
+  height: 708px;
+  width: 100%;
+  &__list {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+.card {
+ 
+  max-width: 270px;
+  height: 428px;
+}
+.social-media {
+
   li {
     fill: var(--social-media);
     cursor: pointer;
@@ -71,3 +102,4 @@ figcaption {
     }
   }
 }
+*/
