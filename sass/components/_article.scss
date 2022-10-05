@@ -16,8 +16,8 @@
     @include font-style(14px, 400, 0.03em, 1.75);
     color: var(--text-color-3);
     display: flex;
-    justify-content: center;
-    width: 270px;
+    justify-content: space-evenly;
+    width: 450px;
   }
   &__icon {
     width: 450px;
