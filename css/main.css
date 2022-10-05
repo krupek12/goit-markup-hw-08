@@ -1191,7 +1191,7 @@ label:focus-within > svg {
   padding: 0;
   cursor: pointer;
   background-color: transparent;
-  cornerradius: 50%;
+  border-radius: 50%;
   outline: none;
   cursor: pointer;
 }
