@@ -1,6 +1,122 @@
 .footer {
   display: flex;
   flex-direction: column;
+  height: 603px;
+  background-color: var(--box-1-color);
+  > .container {
+    margin-top: 60px;
+    display: block;
+    gap: 60px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.contact-footer {
+  @include font-style(14px, 400, 0.03em, 1.72);
+  list-style-type: none;
+  gap: 10px;
+  text-decoration: none;
+  color: $headlines;
+  .contact-footer__link {
+    color: $main-bg;
+    opacity: 0.6;
+    margin-bottom: 60px;
+    &:hover {
+      color: $main;
+    }
+  }
+}
+address {
+  color: $main-bg;
+  @include font-style(14px, 400, 0.03em, 1.72);
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.footer-headline {
+  color: $main-bg;
+  @include font-style(14px, 700, 0.03em, 1.14);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  text-align: center;
+  justify-content: center;
+}
+.footer-social-media {
+  list-style: none;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 60px;
+  gap: 10px;
+  cursor: pointer;
+  &__icon {
+    border-radius: 50%;
+    fill: $main-bg;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    &:hover,
+    &:focus {
+      fill: $main-bg;
+      background-color: $main;
+    }
+  }
+}
+.footer-form {
+  display: block;
+  position: relative;
+  &__frame {
+    width: 450px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px 16px;
+    background-color: $footer-bg;
+  }
+  &__button {
+    display: block;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 50px;
+    bottom: -70px;
+    left: 125px;
+    background-color: $main;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    /*teks guzika*/
+    @include font-style(16px, 700, 0.06em, 1.87);
+    color: $main-bg;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 42px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 148px;
+    bottom: 13px;
+    display: flex;
+  }
+}
+
+input::placeholder {
+  @include font-style(16px, 400, 0.03em, 1.25);
+  color: rgba(255, 255, 255, 0.6);
+}
+/*.footer {
+  display: flex;
+  flex-direction: column;
   height: 252px;
   background-color: var(--box-1-color);
   > .container {
@@ -66,7 +182,7 @@ address {
 }
 
 /*----formularz stopka---*/
-.footer-form {
+/*.footer-form {
   position: relative;
   &__frame {
     width: 358px;
@@ -91,7 +207,7 @@ address {
     cursor: pointer;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     /*teks guzika*/
-    color: var(--text-color-2);
+/*color: var(--text-color-2);
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
@@ -121,3 +237,4 @@ input::placeholder {
   line-height: 1.25;
   letter-spacing: 0.03em;
 }
+*/
